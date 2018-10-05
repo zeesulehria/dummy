@@ -1,0 +1,29 @@
+@import "../../sass/variable";
+
+.alignTabs {
+    padding-right: 12%;
+    padding-top: 3%;
+    border-top-color:black; 
+    border-top-width: 2dp; 
+    border-bottom-color:black; 
+    border-bottom-width: 2dp; 
+}
+
+.colorWhite {
+    color: white;
+}
+
+.md-icon {
+    font-family: $material-icon-font;
+}
+
+.slideBackground {
+    background-color:#a1a1a1;
+    margin: 5dp 3% 15dp 3%;
+    border-radius: 100%;
+    padding: 0dp 12% 0dp 12%;
+}
+
+.slider {
+    font-size: 12dp;
+}

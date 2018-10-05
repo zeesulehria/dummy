@@ -1,0 +1,29 @@
+@import "../theme/sass/variable";
+.page-padding {
+    padding: 10% 0% 4% 0%;
+    background-color: $background;
+}
+
+.multipleSelect {
+    width: 120dp;
+    height: 50dp;
+    border-radius: 14%;
+    margin-top: 3%;
+    border-width: 2dp;
+    border-color: black;
+    background-color: $background;
+    color: $muted-color;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.fanPadding {
+    padding-bottom: 7%;
+}
+
+.alignTabs {
+    padding-top: 10dp;
+    padding-bottom: 25dp;
+}

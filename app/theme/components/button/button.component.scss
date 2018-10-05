@@ -1,0 +1,14 @@
+@import "../../sass/variable";
+
+.buttonType {
+  border-radius: 10%;
+  border-width: 3dp;
+  border-color: $primary-color;
+  text-align: center;
+  font-weight: 400;
+  margin: 4dp 0% 4dp 0%;
+}
+
+.primary-color {
+  color: $primary-color;
+}

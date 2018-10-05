@@ -1,0 +1,48 @@
+<ScrollView>
+  <GridLayout rows="auto,auto,auto,auto,auto,auto" columns="*,*" class="page-padding">
+
+    <ts-button labelNumber="L002" color="#ff4972" name="Gel Name" row="0"></ts-button>
+    <ts-button labelNumber="L035" color="#ff9c58" name="Gel Name" row="0" col="1"></ts-button>
+
+    <ts-button labelNumber="L003" color="#ffc86a" name="Gel Name" row="1"></ts-button>
+    <ts-button labelNumber="L058" color="#d932ff" name="Gel Name" row="1" col="1"></ts-button>
+
+    <ts-button labelNumber="L004" color="#ff9a0d" name="Gel Name" row="2"></ts-button>
+    <ts-button labelNumber="L027" color="#ff0000" name="Gel Name" row="2" col="1"></ts-button>
+
+    <GridLayout row="3" colSpan="2" rows="auto" columns="*,*,*" class="alignTabs">
+      <GridLayout class="multipleSelect" (tap)="selectTab(0)">
+        <Label text="Color" class="text-center f-s-22 " [ngClass]="{'colorWhite' : isActive == 0}" textWrap="true"></Label>
+      </GridLayout>
+      <GridLayout class="multipleSelect" col="1" (tap)="selectTab(1)">
+        <Label text="Hue" class="text-center f-s-22 " [ngClass]="{'colorWhite' : isActive == 1}" textWrap="true"></Label>
+      </GridLayout>
+      <GridLayout class="multipleSelect" col="2" (tap)="selectTab(2)">
+        <Label text="Gel" class="text-center f-s-22 " [ngClass]="{'colorWhite' : isActive == 2}" textWrap="true"></Label>
+      </GridLayout>
+    </GridLayout>
+
+
+    <StackLayout row="4" colSpan="2">
+      <ts-slider></ts-slider>
+      <ts-slider></ts-slider>
+      <ts-slider></ts-slider>
+      <ts-slider></ts-slider>
+    </StackLayout>
+
+
+    <GridLayout row="5" colSpan="2" rows="auto,auto" columns="*,*,*" class="alignTabs">
+      <Label text="Fan" class="f-s-22 fanPadding colorWhite text-center" textWrap="true"></Label>
+
+      <GridLayout row="1" class="multipleSelect" (tap)="selectTab(0)">
+        <Label text="Off" class="text-center f-s-22 " [ngClass]="{'colorWhite' : isActive == 0}" textWrap="true"></Label>
+      </GridLayout>
+      <GridLayout row="1" class="multipleSelect" col="1" (tap)="selectTab(1)">
+        <Label text="Auto" class="text-center f-s-22 " [ngClass]="{'colorWhite' : isActive == 1}" textWrap="true"></Label>
+      </GridLayout>
+      <GridLayout row="1" class="multipleSelect" col="2" (tap)="selectTab(2)">
+        <Label text="Full" class="text-center f-s-22 " [ngClass]="{'colorWhite' : isActive == 2}" textWrap="true"></Label>
+      </GridLayout>
+    </GridLayout>
+  </GridLayout>
+</ScrollView>
