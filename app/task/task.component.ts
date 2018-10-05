@@ -17,24 +17,17 @@ export class TaskComponent implements OnInit {
     this._page.actionBarHidden = true;
   }
 
-  selectTab(args) {
-    switch (args) {
-      case 0: {
-         this.isActive = 0;
-      }
-        break;
-      case 1: {
-         this.isActive = 1;
-      }
-        break;
-      case 2: {
-         this.isActive = 2;
-      }
-        break;
-      default:
-        break;
-    }
-  }
+  tabsArray = [
+    {name:"Color"},
+    {name:"Hue"},
+    {name:"Gel"},
+  ];
+
+  fanArray = [
+    {name:"Off"},
+    {name:"Auto"},
+    {name:"Full"},
+  ];
 
   selectFan(args) {
     switch (args) {

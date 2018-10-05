@@ -1,0 +1,28 @@
+@import "../../sass/variable";
+
+.alignTabs {
+    padding-top: 10dp;
+    padding-bottom: 25dp;
+}
+
+.main-font {
+    font-family: $main-font;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.bgBlack {
+    background-color: black;
+}
+
+.multipleSelect {
+    width: 120dp;
+    height: 50dp;
+    border-radius: 14%;
+    margin-top: 3%;
+    border-width: 2dp;
+    border-color: black;
+    color: $muted-color;
+}

@@ -3,7 +3,7 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { TaskComponent } from "~/task/task.component";
-import { NgaModule, SliderComponent } from "~/theme";
+import { NgaModule, SliderComponent, TabsComponent } from "~/theme";
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -24,7 +24,8 @@ import { NgaModule, SliderComponent } from "~/theme";
     declarations: [
         AppComponent,
         TaskComponent,
-        SliderComponent
+        SliderComponent,
+        TabsComponent
     ],
     providers: [
     ],

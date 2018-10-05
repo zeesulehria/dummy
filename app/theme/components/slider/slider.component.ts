@@ -8,9 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
-  @Input() minValue = 0;
   @Input() maxValue = 100;
+  @Input() minValue = 0;
   @Input() value = 0;
+  @Input() row = 0;
+  @Input() colSpan = 0;
   constructor() { }
 
   ngOnInit() {
