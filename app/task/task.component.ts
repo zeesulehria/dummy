@@ -17,13 +17,22 @@ export class TaskComponent implements OnInit {
     this._page.actionBarHidden = true;
   }
 
-  tabsArray = [
+  tabs = [
     {name:"Color"},
     {name:"Hue"},
     {name:"Gel"},
   ];
 
-  fanArray = [
+  buttonsArray = [
+    {label: "L002", color: "#ff4972", name:"Gel Name", row:"0", columns:"0"},
+    {label: "L035", color: "#ff9c58", name:"Gel Name", row:"0", columns:"1"},
+    {label: "L003", color: "#ffc86a", name:"Gel Name", row:"1", columns:"0"},
+    {label: "L058", color: "#d932ff", name:"Gel Name", row:"1", columns:"1"},
+    {label: "L004", color: "#ff9a0d", name:"Gel Name", row:"2", columns:"0"},
+    {label: "L027", color: "#ff0000", name:"Gel Name", row:"2", columns:"1"},
+  ];
+
+  fan = [
     {name:"Off"},
     {name:"Auto"},
     {name:"Full"},

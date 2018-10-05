@@ -1,18 +1,15 @@
 <ScrollView class="bg-color">
   <GridLayout rows="auto,auto,auto,auto,auto,auto" columns="*,*" class="page-padding">
-    <ts-button labelNumber="L002" color="#ff4972" name="Gel Name" row="0"></ts-button>
-    <ts-button labelNumber="L035" color="#ff9c58" name="Gel Name" row="0" col="1"></ts-button>
-    <ts-button labelNumber="L003" color="#ffc86a" name="Gel Name" row="1"></ts-button>
-    <ts-button labelNumber="L058" color="#d932ff" name="Gel Name" row="1" col="1"></ts-button>
-    <ts-button labelNumber="L004" color="#ff9a0d" name="Gel Name" row="2"></ts-button>
-    <ts-button labelNumber="L027" color="#ff0000" name="Gel Name" row="2" col="1"></ts-button>
-    <ts-tabs row="3" colSpan="2" [tabs]="tabsArray" activeTab='1'></ts-tabs>
+    <ng-container *ngFor="let btn of buttonsArray;">
+      <ts-button [labelNumber]="btn.label" [color]="btn.color" [name]="btn.name" [row]="btn.row" [col]="btn.columns"></ts-button>
+    </ng-container>
+    <ts-tabs row="3" colSpan="2" [tabs]="tabs" activeTab='1'></ts-tabs>
     <StackLayout row="4" colSpan="2">
       <ts-slider value="25"></ts-slider>
       <ts-slider value="100"></ts-slider>
       <ts-slider value="100"></ts-slider>
       <ts-slider value="100"></ts-slider>
     </StackLayout>
-    <ts-tabs row="5" colSpan="2" [tabs]="fanArray" activeTab='0'></ts-tabs>
+    <ts-tabs row="5" colSpan="2" [tabs]="fan" activeTab='0'></ts-tabs>
   </GridLayout>
 </ScrollView>
