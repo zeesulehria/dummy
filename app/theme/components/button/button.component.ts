@@ -25,7 +25,7 @@ export class ButtonComponent implements OnInit {
     ngOnInit() {
         let deviceHeight: number = platformModule.screen.mainScreen.heightDIPs;
         let deviceWidth: number = platformModule.screen.mainScreen.widthDIPs;
-        this.btnHeight = deviceHeight * 0.11;
+        this.btnHeight = deviceHeight * 0.12;
         this.btnwidth = deviceWidth * 0.35;
     }
 
