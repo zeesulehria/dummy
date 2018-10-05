@@ -25,5 +25,16 @@
 }
 
 .slider {
-    font-size: 12dp;
+    background-color: white;
+    color: #00d0f7;
+}
+
+.sliderVerticalLine {
+    height: 15dp;
+    background-color: white;
+    width: 1dp;
+}
+
+.main-font {
+    font-family: $main-font;
 }

@@ -1,8 +1,5 @@
-
-
-<GridLayout [height]="btnHeight" class="buttonType" [col]="col" [row]="row" [backgroundColor]="color" (tap)="emitOutput()" [width]="btnwidth">
-    <StackLayout verticalAlignment="middle">
-        <Label [text]="labelNumber"  class="f-s-27 primary-color" textWrap="true"></Label>
-        <Label [text]="name"  class="f-s-27 primary-color" textWrap="true"></Label>
-    </StackLayout>
+<GridLayout [height]="btnHeight" rows="auto,auto" class="buttonType" [col]="col" [row]="row" [backgroundColor]="color" (tap)="emitOutput()"
+    [width]="btnwidth">
+    <Label row="0" [text]="labelNumber" class="f-s-27 primary-color main-font" textWrap="true"></Label>
+    <Label row="1" [text]="name" class="f-s-27 primary-color main-font" textWrap="true"></Label>
 </GridLayout>

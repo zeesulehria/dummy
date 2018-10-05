@@ -11,8 +11,15 @@
     margin-top: 3%;
     border-width: 2dp;
     border-color: black;
-    background-color: $background;
     color: $muted-color;
+}
+
+.bg-color {
+    background-color: $background;
+}
+
+.bgBlack {
+    background-color: black;
 }
 
 .colorWhite {
@@ -26,4 +33,8 @@
 .alignTabs {
     padding-top: 10dp;
     padding-bottom: 25dp;
+}
+
+.main-font {
+    font-family: $main-font;
 }

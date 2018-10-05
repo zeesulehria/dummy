@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'ts-slider',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
+  @Input() minValue = 0;
+  @Input() maxValue = 100;
+  @Input() value = 0;
   constructor() { }
 
   ngOnInit() {
