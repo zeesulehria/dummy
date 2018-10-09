@@ -1,15 +1,39 @@
 <ScrollView class="bg-color">
   <GridLayout rows="auto,auto,auto,auto,auto,auto" columns="*,*" class="page-padding">
+
     <ng-container *ngFor="let btn of buttonsArray;">
-      <ts-button [labelNumber]="btn.label" [color]="btn.color" [name]="btn.name" [row]="btn.row" [col]="btn.columns"></ts-button>
+      <GridLayout [height]="btnHeight" rows="auto,auto" class="buttonType" [col]="btn.columns" [row]="btn.row"
+        [backgroundColor]="btn.color" [width]="btnwidth">
+        <Label row="0" [text]="btn.label" class="f-s-27 primary-color main-font" textWrap="true"></Label>
+        <Label row="1" [text]="btn.name" class="f-s-27 primary-color main-font" textWrap="true"></Label>
+      </GridLayout>
     </ng-container>
-    <ts-tabs row="3" colSpan="2" [tabs]="tabs" activeTab='1'></ts-tabs>
+
+    <GridLayout row="3" colSpan="2" rows="auto" columns="*,*,*" class="alignTabs">
+      <ng-container *ngFor="let tab of tabs; let i = index; let last = last;">
+        <GridLayout class="multipleSelect" [col]="i" (tap)="selectTab(i)">
+            <Label [text]="tab.name" verticalAlignment="middle" class="text-center  f-s-22 main-font" [ngClass]="{'colorWhite' : tabActive == i}"
+            textWrap="true"></Label>
+        </GridLayout>
+      </ng-container>
+    </GridLayout>
+
     <StackLayout row="4" colSpan="2">
-      <ts-slider value="25"></ts-slider>
-      <ts-slider value="100"></ts-slider>
-      <ts-slider value="100"></ts-slider>
-      <ts-slider value="100"></ts-slider>
+      <ns-slider value="25"></ns-slider>
+      <ns-slider value="100"></ns-slider>
+      <ns-slider value="100"></ns-slider>
+      <ns-slider value="100"></ns-slider>
     </StackLayout>
-    <ts-tabs row="5" colSpan="2" [tabs]="fan" activeTab='0'></ts-tabs>
+
+    <GridLayout row="5" colSpan="2" rows="auto,auto" columns="*,*,*" class="alignTabs">
+      <Label text="Fan" class="text-center colorWhite f-s-22 main-font" textWrap="true"></Label>
+      <ng-container  *ngFor="let tab of tabs; let i = index; let last = last;">
+        <GridLayout  row="1" class="multipleSelect" [col]="i" (tap)="selectFan(i)">
+          <Label [text]="tab.name" verticalAlignment="middle" class="text-center f-s-22 main-font" [ngClass]="{'colorWhite' : FanActive == i}"
+            textWrap="true"></Label>
+        </GridLayout>
+      </ng-container>
+    </GridLayout>
+
   </GridLayout>
 </ScrollView>

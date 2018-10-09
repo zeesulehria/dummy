@@ -1,24 +1,81 @@
-@import "../theme/sass/variable";
+
 .page-padding {
     padding: 10% 0% 4% 0%;
-    background-color: $background;
+    background-color: #252525;
 }
-
 
 .bg-color {
-    background-color: $background;
+    background-color: #252525;
 }
 
-
-
-.colorWhite {
-    color: white;
-}
 
 .fanPadding {
     padding-bottom: 7%;
 }
 
 .main-font {
-    font-family: $main-font;
+    font-family: 'Abel-Regular,Abel';
+}
+
+
+// buttons
+.buttonType {
+    border-radius: 15%;
+    border-width: 3dp;
+    border-color: black;
+    text-align: center;
+    font-weight: 400;
+    margin: 4dp 0% 4dp 0%;
+    padding-top: 5%;
+}
+
+.primary-color {
+    color: black;
+}
+
+.main-font {
+    font-family: 'Abel-Regular,Abel';
+}
+
+.f-s-27 {
+    font-size: 27dp;
+}
+
+.f-s-22 {
+    font-size: 22dp;
+}
+
+.f-s-32 {
+    font-size: 32dp;
+}
+
+// tabs sass 
+
+.alignTabs {
+    padding-top: 10dp;
+    padding-bottom: 25dp;
+}
+
+.main-font {
+    font-family: 'Abel-Regular,Abel';
+}
+
+.colorWhite {
+    color: white;
+    // background-color: black;
+}
+
+.bgBlack {
+    background-color: black;
+}
+
+
+.multipleSelect {
+    width: 120dp;
+    height: 50dp;
+    border-radius: 14%;
+    margin-top: 3%;
+    border-width: 2dp;
+    border-color: black;
+    color: #757575;
 }

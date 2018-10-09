@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'ts-slider',
+  selector: 'ns-slider',
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css'],
   moduleId: module.id
@@ -13,6 +13,7 @@ export class SliderComponent implements OnInit {
   @Input() value = 0;
   @Input() row = 0;
   @Input() colSpan = 0;
+
   constructor() { }
 
   ngOnInit() {

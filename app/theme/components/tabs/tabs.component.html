@@ -1,8 +1,0 @@
-<GridLayout [row]="row" [colSpan]="colSpan" rows="auto" columns="*,*,*" class="alignTabs">
-  <ng-container *ngFor="let tab of tabs; let i = index; let last = last;">
-    <GridLayout class="multipleSelect" [col]="i" (tap)="selectTab(i)">
-      <Label [text]="tab.name" class="text-center f-s-22 main-font" [ngClass]="{'colorWhite bgBlack' : activeTab == i}"
-        textWrap="true"></Label>
-    </GridLayout>
-  </ng-container>
-</GridLayout>

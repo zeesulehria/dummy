@@ -1,4 +1,4 @@
-@import "../../sass/variable";
+
 
 .alignTabs {
     padding-right: 12%;
@@ -14,7 +14,7 @@
 }
 
 .md-icon {
-    font-family: $material-icon-font;
+    font-family: "Material Icons", "MaterialIcons-Regular","materialicons";
 }
 
 .slideBackground {
@@ -36,5 +36,17 @@
 }
 
 .main-font {
-    font-family: $main-font;
+    font-family: 'Abel-Regular,Abel';
+}
+
+.f-s-27 {
+    font-size: 27dp;
+}
+
+.f-s-22 {
+    font-size: 22dp;
+}
+
+.f-s-32 {
+    font-size: 32dp;
 }
